@@ -15,6 +15,7 @@
     }
     a {
       color: white;
+      background-color: black;
     }
     h1 {
       font-size: 70px;
@@ -54,9 +55,10 @@
     <img src="https://pbs.twimg.com/profile_images/584756686847668224/kbBpXHR8.jpg">
     <h1>My Mountain Journey</h1>
     <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">My Summits</a></li>
+      <li><a href="https://twitter.com/wolfieorama" target="blank">About Me</a></li>
+      <li><a href="#test">My Summits</a></li>
       <li><a href="#">My Attempts</a></li>
+      <li><a href="mailto:wolfieorama@gmail.com?subject=%when%is%the%next%climb&body=%let%me%know">Holla</a></li>
     </ul>
   </header>
   <article>
@@ -90,9 +92,11 @@
   <article>
     <h2>Did IT!! </h2>
     <p>Point Lenana<br>
-    <img class="blogimages" src="http://i.imgur.com/yBTUcMu.jpg">
+    <img id="test" class="blogimages" src="http://i.imgur.com/yBTUcMu.jpg">
+    <a href="#top">Home</a>
     </p>
     <button>Vote</button>
+
   </article>
   <script>
     $("button").on("click", function() {
