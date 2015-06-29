@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://i.imgur.com/lU9Qjz5.jpg');
+      background-size: cover;
+      color: white;
+    }
+    .blogimages{
+      width: 800px;
+      height: 500px;
+      vertical-align: center;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://pbs.twimg.com/profile_images/584756686847668224/kbBpXHR8.jpg">
+    <h1>My Mountain Journey</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">My Summits</a></li>
+      <li><a href="#">My Attempts</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Mt Kenya Narumoru Route - Day 1</h2>
+    <p>All smiles and gearing up for the climb<br>
+    <img class="blogimages"  src="http://i.imgur.com/aqjEUi8.jpg">
+    </p>
+    <button>Vote</button>
+  </article>
+  <article>
+    <h2>Through the moorland - Day 2</h2>
+    <p>Not sure if this is what i signed up for?<br>
+    <img class="blogimages" src="http://i.imgur.com/4UarOLA.jpg">
+    </p>
+    <button>Vote</button>
+  </article>
+  <article>
+    <h2>Things get Rocky !! Rocky!! Rocky!! - Day 3 </h2>
+    <p>Oh well and the Temps were dropping too<br>
+    <img class="blogimages" src="http://i.imgur.com/BUa4mgk.jpg">
+    </p>
+    <button>Vote</button>
+  </article>
+  <article>
+    <h2>Summit Night - Day 4 </h2>
+    <p>When it really matters<br>
+    <img class="blogimages" src="http://i.imgur.com/1G1qnf0.jpg">
+    </p>
+    <button>vote</button>
+  </article>
+  <article>
+    <h2>Did IT!! </h2>
+    <p>Point Lenana<br>
+    <img class="blogimages" src="http://i.imgur.com/yBTUcMu.jpg">
+    </p>
+    <button>Vote</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>

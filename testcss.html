@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+</body>
+</html>
+<head>
+<title> Mary's Statue </title>
+<style>
+
+.button{
+	background-color: red;
+}
+.paratest{
+	font-size: 26px;
+	font-style: sans-serif;
+	color: blue;
+}
+
+#test{
+	color: red;
+	font-size: 30px;
+}
+
+li, b{
+	font-size: 25px;
+	color: yellow;
+}
+
+li > ul{ //only direct descendants will be selected direct descendant selector
+	border: solid red;
+}
+
+li li a{ 
+		//only anchors who are children of children	
+}
+
+ul + p{
+		// only the 1st para after ul
+}
+
+ul ~p{
+
+	//any paragraph following the ul will take this style
+}
+
+a:hover{
+	//pseudoselector only when object are in a certain state
+}
+
+.boo{
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 200;
+	display: none;
+}
+
+.peek:hover + .boo{
+	display: block;
+}
+
+*{
+	margin: 0px;
+}
+p:first-child {
+	color: red;  /nth pseudo selector
+}
+p:nth-child(3){
+	color: red;
+}
+p:nth-child(odd){
+	color: red;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<img src="/home/wolfieorama/Desktop/test web/profpic.JPG" width="104" height="142">
+<h1> Mary's Statue </h1>
+<p>This is  the story about the statue of Mary the mother of Jesus</p>
+<p class="paratest"><b>Hi John,</b>
+<p class="paratest">Thanks for reaching out to us for help with your recent Uber issue. 
+Feedback from your support interaction is important to help us improve
+ <p>
+<ul style="list-style-type:circle">
+  <li>Coffee</li>
+  		<ul>black</ul>
+  		<ul>white</ul>
+  		<ul>cappuccino</ul>
+  <li>Tea</li>
+  		<ul>green</ul>
+  		<ul>black</ul>
+  <li>Milk</li>
+</ul>
+</p>
+
+<p id="test">To let us know how we did, please fill out this short 1 minute survey:  
+We look forward to hearing from you.</p>
+
+<p class="peek">Peek a</p>
+
+<p class="boo">BOO!!</p>
+
+<input class="button" type="submit">
+</body>
