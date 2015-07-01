@@ -1,0 +1,9 @@
+browser are built with 100s of classes, its eveident that they are hard to debug and no documentation or very limited is available about them
+
+browser high level structure: - user interface, browser engine, rendering engine: networking, javascript interpreter, UI backend and data persisitent layers like cookies
+
+browers are very error tolerance 
+
+Parsing ----> where everything happens 
+
+browser main flow
